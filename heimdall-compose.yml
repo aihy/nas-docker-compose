@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - /media/data0/docker/heimdall:/config
+    ports:
+      - 9090:80
+    restart: unless-stopped

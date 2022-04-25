@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=9093
+    volumes:
+      - /media/data0/docker/qbittorrent/config:/config
+      - /media/data0/docker/qbittorrent/downloads:/downloads
+    ports:
+      - 9093:9093
+      - 6881:6881
+      - 6881:6881/udp
+    restart: unless-stopped
