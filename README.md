@@ -10,7 +10,17 @@ docker-compose -f grafana-compose.yml -f heimdall-compose.yml -f nginx-compose.y
 ## default auth
 
 |item|user|password|
-|---|---|---
+|---|---|---|
 |qbittorrent|admin|adminadmin|
 |transmission|d525|123456|
 |grafana|admin|admin|
+
+## port
+
+|item|port|
+|---|---|
+|heimdall|9090|
+|grafana|9091|
+|nginx|9092|
+|qbittorrent|9093|
+|transmission|9094|
