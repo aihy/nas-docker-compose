@@ -15,7 +15,7 @@ docker-compose -f grafana-compose.yml -f heimdall-compose.yml -f nginx-compose.y
 |transmission|d525|123456|
 |grafana|admin|admin|
 
-## port
+## ports
 
 |item|port|
 |---|---|
