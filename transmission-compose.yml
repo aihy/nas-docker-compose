@@ -7,14 +7,14 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
-      - USER=d525
+      - USER=admin
       - PASS=123456
     volumes:
       - /media/data0/docker/transmission/config:/config
       - /media/data0/docker/transmission/downloads:/downloads
       - /media/data0/docker/transmission/watch:/watch
     ports:
-      - 9094:9091
+      - 11104:9091
       - 51413:51413
       - 51413:51413/udp
     restart: unless-stopped

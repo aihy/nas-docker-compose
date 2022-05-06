@@ -10,5 +10,5 @@ services:
     volumes:
       - /media/data0/docker/heimdall:/config
     ports:
-      - 9090:80
+      - 11100:80
     restart: unless-stopped

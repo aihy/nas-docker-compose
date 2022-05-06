@@ -20,7 +20,7 @@ services:
     image: grafana/grafana:latest
     container_name: grafana
     ports:
-      - 9091:3000
+      - 11101:3000
     restart: unless-stopped
     depends_on:
       - node_exporter

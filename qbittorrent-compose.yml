@@ -10,9 +10,9 @@ services:
       - WEBUI_PORT=9093
     volumes:
       - /media/data0/docker/qbittorrent/config:/config
-      - /media/data0/docker/qbittorrent/downloads:/downloads
+      - /media:/media
     ports:
-      - 9093:9093
-      - 6881:6881
-      - 6881:6881/udp
+      - 11103:9093
+      - 45409:45409
+      - 45409:45409/udp
     restart: unless-stopped
