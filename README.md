@@ -7,6 +7,8 @@ sudo apt-get update && sudo apt-get install docker-compose -y
 docker-compose -f grafana-compose.yml -f heimdall-compose.yml -f nginx-compose.yml -f qbittorrent-compose.yml -f transmission-compose.yml up -d
 ```
 
+> delete all old containers and images : `docker system prune -a`
+
 ### grafana config
     grafana datasource: http://prometheus:9090
     dashboard id: 1860 13978
