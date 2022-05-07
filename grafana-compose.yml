@@ -22,6 +22,7 @@ services:
     ports:
       - 11101:3000
     restart: unless-stopped
+    user: 1000:1000
     depends_on:
       - node_exporter
       - prometheus
